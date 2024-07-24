@@ -1,35 +1,36 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+//importacoes gerais essenciais para podermos rotear as páginas.
+
+// Biblioteca do Router
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './App.css';
+
+// Endereços das páginas
+import Home from './pages/home/Home'
+// import Reservas from './pages/reservas/Reservas'
+// import Galeria from './pages/galeria/Galeria'
+// import Contato from './pages/contato/Contato'
+// import Sobre from './pages/sobre/Sobre'
+// Inportacoes ja preparadas para o Arranque quando as páginas estiverem prontas
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <div>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          {/* Paginas já roteada para quando estiverem prontas, ja descomentar. */}
+          {/* <Route path="/reservas" element={<Reservas />} />
+          <Route path="/galeria" element={<Galeria />} />
+          <Route path="/sobre" element={<Sobre />} />
+          <Route path="/contato" element={<Contato />} />*/}
+        </Routes>
+      </BrowserRouter>
+    </div>
   )
 }
 
 export default App
+
+

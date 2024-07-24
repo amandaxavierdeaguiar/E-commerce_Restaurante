@@ -2,6 +2,7 @@
 
 1 passo:
 - Criar um projeto React com o comando 'npm create vite@latest NomeDoProjeto -- --template react'
+- Depois da instalação, tem que entrar na pasta do projeto com o comando 'cd NomeDoProjeto'
 
 2 passo:
 - npm install
