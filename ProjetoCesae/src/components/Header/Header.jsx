@@ -30,7 +30,7 @@ function Header() {
                     >
                     </Nav>
                     <Nav.Link className='Menu' href="/">Quem somos</Nav.Link>
-                    <Nav.Link className='Menu' href="/">Produtos</Nav.Link> 
+                    <Nav.Link className='Menu' href="/galeria">Galeria</Nav.Link> 
                     <Nav.Link className='Menu' href="/">Contatos</Nav.Link>
                   
                 </Navbar.Collapse>
