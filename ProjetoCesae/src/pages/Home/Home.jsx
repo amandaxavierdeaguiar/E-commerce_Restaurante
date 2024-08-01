@@ -2,7 +2,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 // Aqui chamamos os componentes das páginas
-import Header from "/src/components/header/Header"
+import Header from "/src/components/Header/Header"
 
 function Home() {
     return(

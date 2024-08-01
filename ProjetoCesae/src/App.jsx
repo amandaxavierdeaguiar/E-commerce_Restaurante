@@ -6,12 +6,12 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
 // Endereços das páginas
-import Home from './pages/home/Home'
-// import Reservas from './pages/reservas/Reservas'
+import Home from './pages/Home/Home'
+import Reservas from './pages/reservas/Reservas'
 import Galeria from './pages/galeria/Galeria'
-// import Contato from './pages/contato/Contato'
-// import Sobre from './pages/sobre/Sobre'
-// Inportacoes ja preparadas para o Arranque quando as páginas estiverem prontas
+ import Contato from './pages/contato/Contato'
+import Sobre from './pages/sobre/Sobre'
+// Importacoes ja preparadas para o Arranque quando as páginas estiverem prontas
 
 function App() {
 

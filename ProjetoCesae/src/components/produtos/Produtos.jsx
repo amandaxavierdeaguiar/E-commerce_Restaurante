@@ -1,4 +1,5 @@
 import { Button, Card} from 'react-bootstrap';
+import carrinhoCompras from '../CarrinhoCompras/CarrinhoCompras';
 
 {/** MERAMENTE ILUSTRATIVO, APENAS PARA CONSEGUIMOS POR PARA FUNCIONAR O CODIGO. DEPOIS CUIDAMOS DO LAYOUT */}
 
@@ -23,7 +24,7 @@ function Produtos() {
             <Card.Text>
                 {menu_comida[0].descricao}
             </Card.Text>
-            <Button variant="primary">Encomendar</Button>
+            <Button variant="primary" onClick={carrinhoCompras()}>Encomendar</Button>
           </Card.Body>
         </Card>
       );

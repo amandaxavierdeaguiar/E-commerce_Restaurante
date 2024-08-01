@@ -6,6 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import {Container, Nav, Navbar} from 'react-bootstrap'
 // Importacao da utilização do ICON
 import * as Icon from 'react-bootstrap-icons';
+import CarrinhoCompras from '../CarrinhoCompras/CarrinhoCompras';
 
 // Função da página principal, representada por /
 function Header() {
@@ -32,7 +33,7 @@ function Header() {
                     <Nav.Link className='Menu' href="/">Quem somos</Nav.Link>
                     <Nav.Link className='Menu' href="/galeria">Galeria</Nav.Link> 
                     <Nav.Link className='Menu' href="/">Contatos</Nav.Link>
-                  
+                  <carrinhoCompras/>
                 </Navbar.Collapse>
                 <div id="card">
                   <Icon.Cart className='iconCard'/>
