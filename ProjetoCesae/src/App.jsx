@@ -13,6 +13,7 @@ import Galeria from './pages/galeria/Galeria'
 // import Sobre from './pages/sobre/Sobre'
 // Inportacoes ja preparadas para o Arranque quando as páginas estiverem prontas
 
+
 function App() {
 
   return (
@@ -21,6 +22,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/galeria" element={<Galeria />} />
+
           {/* Paginas já roteada para quando estiverem prontas, ja descomentar. */}
           {/* <Route path="/reservas" element={<Reservas />} />
           

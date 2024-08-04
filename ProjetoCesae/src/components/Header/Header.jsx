@@ -1,45 +1,54 @@
 // Importacao CSS
-import './header.css'
 // Importacao Bootstrap Essencial
 import 'bootstrap/dist/css/bootstrap.min.css';
 // Importacao dos components utilizados do BOOTSTRAP
 import {Container, Nav, Navbar} from 'react-bootstrap'
-// Importacao da utilização do ICON
-import * as Icon from 'react-bootstrap-icons';
+// Importacao do Login
+import LoginCadastro from '/src/components/login/Login.jsx'
+import Carrinho from '/src/components/carrinhoCompras/CarrinhoCompras.jsx'
+import './header.css'
 
 // Função da página principal, representada por /
 function Header() {
 
-    // Colocar o endereço das fotos aqui. como este exemplo: 
+    // Importando logo
     const logo = "/src/assets/logo.png";
 
-    {/** TODA A FUNÇÃO DENTRO DO RETURN - LINGUAGEM HTML E BOOTSTRAP */}
     return (
-      <div className='navAll'>
-        <Navbar expand="lg" className="align-items-center justify-content-center">
-              <Container className='containerBot' fluid>
-                <Navbar.Brand className='logo-container'>
-                  <a href="/"><img className='logo' src={logo}/></a>
-                </Navbar.Brand>
-                <Navbar.Toggle className='navToggle'  aria-controls="navbarScroll" />
-                <Navbar.Collapse id="navbarScroll ">
-                    <Nav
-                        className="me-auto my-2 my-lg-0"
-                        style={{ maxHeight: '100px' }}
-                        navbarScroll
-                    >
-                    </Nav>
-                    <Nav.Link className='Menu' href="/">Quem somos</Nav.Link>
-                    <Nav.Link className='Menu' href="/galeria">Galeria</Nav.Link> 
-                    <Nav.Link className='Menu' href="/">Contatos</Nav.Link>
-                  
-                </Navbar.Collapse>
-                <div id="card">
-                  <Icon.Cart className='iconCard'/>
-                </div>
-              </Container>
-            </Navbar>
-      </div>      
+        <Navbar expand="sm" fixed="top" className="bg-body-tertiary m-0 navbar-sm"> {/** acrescentei navbar-sm */}
+        <Container>
+            <Navbar.Brand href="/">
+                <img
+                src={logo}
+                width="60"
+                height="60"
+                className="d-inline-block align-top"
+                alt="Logo Sabores da Terra"
+                />
+            </Navbar.Brand>
+            <Navbar.Toggle className='navToggle'  aria-controls="navbarScroll" />
+                  <Navbar.Collapse id="navbarScroll" className="justify-content-center"> {/** Acrescentei className="justify-content-end" */}
+                    {/** me-auto my-2 my-lg-0 */}
+                      <Nav
+                          className="me-auto" 
+                          style={{ maxHeight: '100px' }}
+                          navbarScroll
+                      >
+                      </Nav>
+                      <Nav.Link className='Menu' href="/">Quem somos</Nav.Link>
+                      <Nav.Link className='Menu' href="/galeria">Menu</Nav.Link> 
+                      <Nav.Link className='Menu' href="/">Contatos</Nav.Link>
+                    
+                  </Navbar.Collapse>
+            <Navbar.Collapse className="justify-content-end">
+            </Navbar.Collapse>
+            <div className="d-flex justify-content-end">
+                <LoginCadastro />
+                <Carrinho />
+            </div>
+        </Container>
+      </Navbar>
     );
-}
+  }
+
 export default Header;

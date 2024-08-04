@@ -1,0 +1,80 @@
+
+.image-circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 50px 20px 10px 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+}
+
+.image-circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%; /* Acrescentei */
+  margin: auto; /* centralizar a imagem */
+}
+
+.card-produto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px; /* adiciona um padding para dar espaço entre a imagem e o texto */
+  border: 1px solid #ddd; /* adiciona uma borda para definir o limite do quadro */
+  border-radius: 10px; /* adiciona um raio de curvatura para dar um efeito de arredondamento */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* adiciona uma sombra para dar profundidade */
+}
+
+.titleProduct {
+  margin-left: 20px;
+  color: #FF8D1A;
+}
+
+.txtProduct{
+  margin-left: 20px;
+}
+
+.priceProduct{
+  margin-left: 20px;
+  font-weight: bold;
+}
+
+.payProduct {
+  margin-left: 20px;
+  background-color: #FF8D1A; /* cor do título */
+  border: none; /* sem borda */
+  border-radius: 20px; /* redondo */
+  padding: 5px 20px; /* espaçamento interno */
+  font-size: 16px; /* tamanho da fonte */
+  color: #fff; /* cor do texto */
+  cursor: pointer; /* cursor de mão */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* sombra atrás */
+  transition: background-color 0.2s ease-in-out; /* transição de cor */
+}
+
+.payProduct:hover {
+  background-color: #FFC107; /* cor ao passar o mouse */
+}
+
+.payProduct:active {
+  background-color: #ccc; /* cor ao clicar */
+}
+
+@media (max-width: 1000px) {
+  .image-circle {
+    margin: 0px 20px 10px 10px;
+  }
+  
+  .card-produto {
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.title-produtos {
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #05186B;
+  text-align: center;
+  margin-bottom: 20px;
+}

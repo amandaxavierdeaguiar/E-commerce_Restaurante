@@ -1,99 +1,25 @@
-.navAll {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+.Menu {
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-right: 20px;
 }
-  .logo {
-    width: 30%;
-    max-width: 30%;
-    margin-left: 20px;
+  
+.Menu:hover {
+  color: #E7A10B;
+  transition: 0.5s;
+}
+
+
+.navToggle {
+  background-color: none;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 576px) {
+  .navbar-sm {
+      padding: 0.25rem 0.5rem;
   }
-  
-  .Menu {
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 14px;
-    text-transform: uppercase;
-    font-weight: bold;
-    margin-right: 20px;
-  }
-  
-  .Menu:hover {
-    color: #E7A10B;
-    transition: 0.5s;
-  }
-  
-  #card {
-    position: relative;
-    font-size: 30px;
-    margin: 0px;
-    margin-right: 20px;
-  }
-  
-  
-  .containerBot {
-    background-color: #fff;
-  }
-  
-  .iconCard {
-    color: black;
-  }
-  
-  /* Media queries for responsiveness */
-  
-  /* Large screens (desktops) */
-  @media only screen and (min-width: 1200px) {
-    .navAll {
-      height: 80px;
-    }
-    .logo {
-      width: 15%;
-      max-width: 20%;
-    }
-    .Menu {
-      font-size: 16px;
-    }
-    #card {
-      font-size: 35px;
-    }
-  }
-  
-  /* Medium screens (tablets) */
-  @media only screen and (min-width: 768px) and (max-width: 1199px) {
-    .navAll {
-      height: 60px;
-    }
-    .logo {
-      width: 20%;
-      max-width: 25%;
-    }
-    .Menu {
-      font-size: 14px;
-    }
-    #card {
-      font-size: 30px;
-    }
-  }
-  
-  /* Small screens (mobiles) */
-  @media only screen and (max-width: 767px) {
-    .navAll {
-      height: 50px;
-    }
-    .logo {
-      width: 25%;
-      max-width: 30%;
-    }
-    .Menu {
-      font-size: 12px;
-    }
-    #card {
-      font-size: 25px;
-    }
-    .containerBot {
-      padding: 10px;
-    }
-  }
+}

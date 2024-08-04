@@ -1,0 +1,61 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.image-container {
+    position: relative;
+    width: 50%;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+}
+
+
+.content {
+    width: 45%;
+    padding: 20px;
+}
+
+.content h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.content h2 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.content p {
+    line-height: 1.6;
+}
+
+.reservation-button {
+    margin-top: 50px;
+    background-color: #ff7f00;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        display: block;
+    }
+
+    .image-container {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .content {
+        width: 100%;
+    }
+}
