@@ -3,5 +3,5 @@ Foi escolhido em equipe o Nicho de Comida Brasileira.
 
 Vamos utilizar o REACT pois é melhor para as divisões e interação com toda a equipe. Ter um trabalho mais limpo e preciso.
 
-O Layout está sendo desenvolvido em Figma pelos 3 elementos. 
+O Layout está sendo desenvolvido em Figma pelo Rodrigo Frota. 
 
