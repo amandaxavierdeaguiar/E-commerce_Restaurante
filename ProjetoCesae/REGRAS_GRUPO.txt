@@ -1,9 +1,0 @@
-- BRANCHES
-Cada um atualiza apenas na sua Branche - Não inserir nada na Main(não por enquanto)
-
-- COMENTAR CÓDIGO
-Para melhor entendimento entre equipes
-
-- ENTREGA
-Devemos fazer a entrega contínua e o feedback constante
-

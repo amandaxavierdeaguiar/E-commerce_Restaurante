@@ -1,0 +1,24 @@
+.location 
+{
+    padding: 100px 100px;
+    background-color: #198754;
+}
+
+.location .map 
+{
+    width: 100%;
+}
+
+.location .map iframe 
+{
+    width: 100%;
+}
+
+/* media query para telas menores */
+@media only screen and (max-width: 768px) {
+    .location 
+    {
+        padding: 20px 20px;
+        background-color: #198754;
+    }   
+}   

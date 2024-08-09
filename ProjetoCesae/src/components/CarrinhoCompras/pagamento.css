@@ -1,0 +1,33 @@
+.pagamento {
+    width: 100%;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  
+  .pagamento form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .pagamento input[type="text"] {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  .pagamento button[type="submit"] {
+    background-color: tan;
+    border-color: black;
+    border-radius: 10px;
+    width: 200px;
+    padding: 5px;
+  }
+  
+  .pagamento button[type="submit"]:hover {
+    transition: all ease 0.5s;
+    background-color: #FF5733;
+  }

@@ -3,6 +3,8 @@ import { Container, Row, Col, Card } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './produtos.css'
 import * as Icon from 'react-bootstrap-icons';
+// IMPORTACAO DO REACT USE CARD PARA INSERÇÃO DO PRODUTO NO CARRINHO
+import { useCart } from 'react-use-cart';
 
 // MENU BEBIDAS
 const bebidas = [
@@ -40,8 +42,8 @@ const bebidas = [
       },
       {
         "id": 5,
-        "name": "Suco natural de Laranja",
-        "description": "Sucos naturais",
+        "name": "Suco natural",
+        "description": "Sabor Laranja",
         "price": 2.50,
         "size": "300ml",
         imageUrl: "/src/assets/produtos/bebidas/suco-laranja.png",
@@ -96,7 +98,7 @@ const bebidas = [
       },
       {
         "id": 12,
-        "name": "Cerveja Super Bock Stout",
+        "name": "Super Bock Stout",
         "description": "Cerveja portuguesa",
         "price": 2.50,
         "size": "330ml",
@@ -105,6 +107,9 @@ const bebidas = [
 ];
 
 function ProdutosBebidas() {
+  //CHAMANDO A BIBLIOTECA useCart
+  const { addItem } = useCart();
+
     return (
         <Container>
           <Row >
@@ -120,7 +125,8 @@ function ProdutosBebidas() {
                       <Card.Title className='titleProduct'>{produto.name}</Card.Title>
                       <Card.Text className='txtProduct'>{produto.description}</Card.Text>
                       <Card.Text className='priceProduct'>{produto.price.toFixed(2)}€</Card.Text>
-                      <button className="payProduct">
+                      {/** INSERINDO LIGACAO DO ONCLICK COM A BOBLIOTECA DE ADD ITEM */}
+                      <button className="payProduct" onClick={() => addItem(produto)}>
                         Comprar <Icon.CartPlus/>
                       </button>
                     </Col>

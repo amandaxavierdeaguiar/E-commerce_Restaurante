@@ -73,3 +73,18 @@
   .remember-forgot a:hover {
     text-decoration: underline;
   }
+
+  .iconCartLogin{
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  .btnLoginCadastro{
+    background-color: #FF8D1A;
+    border-style: none;
+
+  }
+
+  .btnLoginCadastro:hover{
+    background-color: #FFC107;
+}

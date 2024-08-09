@@ -20,3 +20,6 @@
 
 6 passo:
 - Instalação do Bootstrap Icons com o comando 'npm install react-bootstrap-icons --save'
+
+
+INSTALAMOS A BIBLIOTECA 'npm install react-use-cart' PARA FACILIDADE AO ACESSO AO ESTADO DO CARRINHO.

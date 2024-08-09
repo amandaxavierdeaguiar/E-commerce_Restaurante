@@ -1,6 +1,5 @@
 import { useState } from 'react';
-import Button from 'react-bootstrap/Button';
-import Modal from 'react-bootstrap/Modal';
+import {Button, Modal} from 'react-bootstrap';
 // Importacao da utilização do ICON
 import * as Icon from 'react-bootstrap-icons';
 import './login.css'
@@ -34,7 +33,7 @@ function Login(){
     <>
       <div id="btnLogin-popup">    
         <span className="btnLogin-popup">
-          <Icon.PersonCircle onClick={handleShow}/>
+          <Icon.PersonCircle className='iconCartLogin' onClick={handleShow}/>
         </span>
       </div>
 
@@ -75,7 +74,7 @@ function Login(){
           <Button variant="secondary" onClick={handleShowCadastro}>
             Cadastra-se
           </Button>
-          <Button variant="primary" onClick={handleLogin}>Login</Button>
+          <Button className='btnLoginCadastro' onClick={handleLogin}>Login</Button>
         </Modal.Footer>
       </Modal>
 
@@ -123,7 +122,7 @@ function Login(){
           <Button variant="secondary" onClick={handleCloseCadastro}>
             Voltar
           </Button>
-          <Button variant="primary" onClick={handleCadastro}>Cadastrar</Button>
+          <Button className='btnLoginCadastro' onClick={handleCadastro}>Cadastrar</Button>
         </Modal.Footer>
       </Modal>
     </>

@@ -1,0 +1,81 @@
+.btnCarrinho{
+    background-color: tan;
+    border-radius: 5px;
+    width: 20px;
+    margin: 5px;
+}
+.btnCarrinho:hover{
+    transition: all ease 0.5s;
+    background-color: #FF5733;
+}
+.btnCarrinho1{
+    background-color: tan;
+    border-radius: 10px;
+    width: 100px;
+}
+.btnCarrinho1:hover{
+    transition: all ease 0.5s;
+    background-color: #FF5733;
+}
+
+.btnFinalizarCompra{
+    background-color: tan;
+    border-color: black;
+    border-radius: 10px;
+    width: 150px;
+    padding: 5px;
+}
+
+.btnFinalizarCompra:hover{
+    transition: all ease 0.5s;
+    background-color: #FF5733;
+}
+
+.nome{
+    padding: 8px;
+}
+
+/* CONTADOR CARRINHO DE COMPRAS */
+.cart-container {
+    position: relative;
+  }
+
+  .iconCart {
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+.cart-counter {
+    position: relative;
+    top: -4px; 
+    right: 8px; 
+    width: 20px;
+    height: 20px;
+    background-color: #FF5733 !important;
+    line-height: 15px;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+    padding: 2px;
+    z-index: 1;
+    display: inline-block;
+  }
+
+  /* Responsivo */
+@media (max-width: 1250px) {
+    .cart-container {
+        display: flex;
+        align-items: center;
+    }
+    .cart-counter {
+        position: relative;
+        top: -4px;
+        right: 8px;
+        border-radius: 50%; 
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+    }
+  }

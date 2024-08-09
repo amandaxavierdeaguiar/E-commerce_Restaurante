@@ -27,30 +27,30 @@ function Banner(){
           color: '#fff',
           fontSize: '2vw', // tamanho da fonte relativo a largura da tela
         }}>
-        <h3 style={{
-            position: 'relative',
-            top: '-5vh', // posição do texto relativa a altura da tela
-            fontSize: '1.5vw', // tamanho da fonte relativo a largura da tela
-            fontFamily: 'Franklin Gothic Medium', 
-            fontWeight: 'bold',
-          }}>
-            - Bem Vindo ao melhor restaurante Brasileiro -
-          </h3>
-          <h1 style={{ 
-            fontSize: '4vw', // tamanho da fonte relativo a largura da tela
-            fontWeight: 'bold', 
-            marginBottom: '2vh', // espaçamento relativo a altura da tela
-            fontFamily: 'Franklin Gothic Medium',  
-          }}>
-            VENHA SABOREAR O MELHOR<br></br>DA CULINÁRIA BRASILEIRA
-          </h1>
+          <h3 style={{
+              position: 'relative',
+              top: '-5vh', // posição do texto relativa a altura da tela
+              fontSize: '1.5vw', // tamanho da fonte relativo a largura da tela
+              fontFamily: 'Franklin Gothic Medium', 
+              fontWeight: 'bold',
+            }}>
+              - Bem Vindo ao melhor restaurante Brasileiro -
+            </h3>
+            <h1 style={{ 
+              fontSize: '4vw', // tamanho da fonte relativo a largura da tela
+              fontWeight: 'bold', 
+              marginBottom: '2vh', // espaçamento relativo a altura da tela
+              fontFamily: 'Franklin Gothic Medium',  
+            }}>
+              VENHA SABOREAR O MELHOR<br></br>DA CULINÁRIA BRASILEIRA
+            </h1>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
         <Image src={banner2} className='bannerImage'  alt="Caipirinha" fluid style={{
           filter: 'brightness(0.5)',
-          height: '100vh', // altura da imagem igual a altura da tela
-          objectFit: 'cover' // imagem cobre toda a área
+          height: '100vh', 
+          objectFit: 'cover' 
         }}/>
         <Carousel.Caption style={{
           position: 'absolute',
@@ -63,23 +63,23 @@ function Banner(){
           justifyContent: 'center',
           alignItems: 'center',
           color: '#fff',
-          fontSize: '2vw', // tamanho da fonte relativo a largura da tela
+          fontSize: '2vw', 
         }}>
-          <h1 style={{ 
-            fontSize: '4vw', // tamanho da fonte relativo a largura da tela
-            fontWeight: 'bold', 
-            marginBottom: '2vh', // espaçamento relativo a altura da tela
-            fontFamily: 'Franklin Gothic Medium',  
-          }}>
-            A VARIEDADE DE CAIPIRINHAS<br></br>FEITAS NO CAPRICHO
-          </h1>
+            <h1 style={{ 
+              fontSize: '4vw',
+              fontWeight: 'bold', 
+              marginBottom: '2vh', 
+              fontFamily: 'Franklin Gothic Medium',  
+            }}>
+              A VARIEDADE DE CAIPIRINHAS<br></br>FEITAS NO CAPRICHO
+            </h1>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
         <Image src={banner3} className='bannerImage'  alt="Caipirinha" fluid style={{
           filter: 'brightness(0.5)',
-          height: '100vh', // altura da imagem igual a altura da tela
-          objectFit: 'cover' // imagem cobre toda a área
+          height: '100vh', 
+          objectFit: 'cover' 
         }}/>
         <Carousel.Caption style={{
           position: 'absolute',
@@ -92,16 +92,16 @@ function Banner(){
           justifyContent: 'center',
           alignItems: 'center',
           color: '#fff',
-          fontSize: '2vw', // tamanho da fonte relativo a largura da tela
+          fontSize: '2vw', 
         }}>
-          <h1 style={{ 
-            fontSize: '4vw', // tamanho da fonte relativo a largura da tela
-            fontWeight: 'bold', 
-            marginBottom: '2vh', // espaçamento relativo a altura da tela
-            fontFamily: 'Franklin Gothic Medium',  
-          }}>
-            PARA FECHAR COM CHAVE DE OURO<br></br>UMA SOBREMESA BRASILEIRA
-          </h1>
+            <h1 style={{ 
+              fontSize: '4vw', 
+              fontWeight: 'bold', 
+              marginBottom: '2vh', 
+              fontFamily: 'Franklin Gothic Medium',  
+            }}>
+              PARA FECHAR COM CHAVE DE OURO<br></br>UMA SOBREMESA BRASILEIRA
+            </h1>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>

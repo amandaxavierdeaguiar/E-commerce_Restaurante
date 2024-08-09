@@ -3,19 +3,21 @@ import { Container, Row, Col, Card } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './produtos.css'
 import * as Icon from 'react-bootstrap-icons';
+// IMPORTACAO DO REACT USE CARD PARA INSERÇÃO DO PRODUTO NO CARRINHO
+import { useCart } from 'react-use-cart';
 
 // MENU DE SALGADOS
 const produtos = [
     {
-        id: 7,
+        id: 25,
         name: 'Bolinho Caipira',
-        description: 'Bolinho de massa de mandioca, recheado com queijo e presunto.',
+        description: 'Massa de mandioca, recheado com queijo e presunto.',
         price: 8.00,
         units: 12,
         imageUrl: "/src/assets/produtos/salgados/bolinho-caipira.png",
       },
       {
-        id: 8,
+        id: 26,
         name: 'Coxinha',
         description: 'Coxinha de frango, recheada com frango desfiado e catupiry.',
         price: 7.00,
@@ -23,7 +25,7 @@ const produtos = [
         imageUrl: "/src/assets/produtos/salgados/coxinhas.png",
       },
       {
-        id: 9,
+        id: 27,
         name: 'Quibe',
         description: 'Quibe de carne, recheado com carne moída e especiarias.',
         price: 9.00,
@@ -31,15 +33,15 @@ const produtos = [
         imageUrl: "/src/assets/produtos/salgados/quibe.png",
       },
       {
-        id: 10,
+        id: 28,
         name: 'Empadinhas',
-        description: 'Empadinhas de frango, recheadas com frango desfiado e catupiry.',
+        description: 'Recheadas com frango desfiado e catupiry.',
         price: 8.00,
         units: 12,
         imageUrl: "/src/assets/produtos/salgados/empadinha.png",
       },
       {
-        id: 11,
+        id: 29,
         name: 'Rolinho de Salsicha',
         description: 'Rolinho de salsicha frito, recheado com salsicha. Com ou sem queijo.',
         price: 6.00,
@@ -47,7 +49,7 @@ const produtos = [
         imageUrl: "/src/assets/produtos/salgados/rolinho-salsichas.png",
       },
       {
-        id: 12,
+        id: 30,
         name: 'Mini Quiches',
         description: 'Mini quiches de queijo e presunto, ideais para um lanche rápido.',
         price: 10.00,
@@ -57,6 +59,8 @@ const produtos = [
 ];
 
 function ProdutosSalgados() {
+  //CHAMANDO A BIBLIOTECA useCart
+  const { addItem } = useCart();
     return (
       <Container>
         <Row >
@@ -72,9 +76,10 @@ function ProdutosSalgados() {
                     <Card.Title className='titleProduct'>{produto.name}</Card.Title>
                     <Card.Text className='txtProduct'>{produto.description} Quantidade: {produto.units}</Card.Text>
                     <Card.Text className='priceProduct'>{produto.price.toFixed(2)}€</Card.Text>
-                    <button className="payProduct">
-                      Comprar <Icon.CartPlus/>
-                    </button>
+                    {/** INSERINDO LIGACAO DO ONCLICK COM A BOBLIOTECA DE ADD ITEM */}
+                    <button className="payProduct" onClick={() => addItem(produto)}>
+                        Comprar <Icon.CartPlus/>
+                      </button>
                   </Col>
                 </Row>
               </Card>
